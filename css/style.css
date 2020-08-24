@@ -337,7 +337,7 @@ body {
     overflow-x: hidden;
 }
 
-s body {
+body {
     font-family: poppins;
 }
 
@@ -485,18 +485,23 @@ s body {
 }
 
 .sub-head2 {
-    font-family: Jost;
+    font-family: Poppins;
     font-style: normal;
     font-weight: 500;
     font-size: 36px;
     color: #4C64A1;
 }
 
+footer a {
+    text-decoration: none !important;
+    color: black;
+    opacity: 0.8;
+}
+
 .col-sm-11 {
-    font-family: Jost;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 16px;
     color: #000000;
     opacity: 0.8;
 }
