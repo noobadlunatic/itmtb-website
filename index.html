@@ -41,21 +41,19 @@
         <br> -->
     </div>
 
-    <div class="mob-navbar">
-
-        <div class="topnav">
-            <a href="#home" class="active">Logo</a>
-            <div id="myLinks">
-                <a href="#news">About Us</a>
-                <a href="#contact">Our Products</a>
-                <a href="#about">Contact Us</a>
-            </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <img src="assets/ham-menu.svg" alt="">
-            </a>
+    <div class="topnav">
+        <a href="#home" class="active">Logo</a>
+        <div id="myLinks">
+            <a href="#about-us-link">About Us</a>
+            <a href="#our-products-link">Our Products</a>
+            <a href="#contact-us-link">Contact Us</a>
         </div>
-
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <img src="assets/ham-menu.svg" alt="">
+        </a>
     </div>
+
+
     <div class="div hero-bg">
 
 
@@ -532,17 +530,18 @@
             </div>
         </div>
     </footer>
-
     <script>
         function myFunction() {
-            var x = document.getElementById("myLinks ");
-            if (x.style.display === "block ") {
-                x.style.display = "none ";
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
             } else {
-                x.style.display = "block ";
+                x.style.display = "block";
             }
         }
     </script>
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
