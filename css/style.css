@@ -691,7 +691,8 @@ footer {
         height: 700px;
     }
     .heading {
-        font-size: 60px;
+        font-size: 48px;
+        text-shadow: 40px 16px 0px rgba(241, 148, 65, 0.2);
     }
     .about-us-text {
         margin-left: 3%;
