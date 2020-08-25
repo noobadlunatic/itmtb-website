@@ -596,6 +596,15 @@ footer {
     color: white;
 }
 
+.pacifico {
+    font-family: Pacifico;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    letter-spacing: 0.02em;
+    color: #F68928;
+}
+
 @media only screen and (max-width: 1199px) {
     .features-prospareto {
         margin-top: 10%;
@@ -688,7 +697,7 @@ footer {
         font-size: 48px;
     }
     .hero-bg {
-        height: 700px;
+        height: 600px;
     }
     .heading {
         font-size: 48px;
@@ -699,5 +708,9 @@ footer {
     }
     .mob-nav {
         display: block;
+    }
+    .footer-quote,
+    .pacifico {
+        font-size: 40px
     }
 }
