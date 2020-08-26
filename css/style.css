@@ -404,7 +404,6 @@ body {
     font-weight: bold;
     font-size: 72px;
     color: #000000;
-    text-shadow: 60px 32px 0px rgba(241, 148, 65, 0.2);
 }
 
 .about-us-text {
@@ -621,7 +620,9 @@ footer {
     .topnav {
         display: block;
         margin-top: 4%;
-        margin-right: 4%;
+        right: 4%;
+        position: fixed;
+        z-index: 999;
     }
 }
 
@@ -707,7 +708,6 @@ footer {
     }
     .heading {
         font-size: 48px;
-        text-shadow: 40px 16px 0px rgba(241, 148, 65, 0.2);
     }
     .about-us-text {
         margin-left: 3%;
