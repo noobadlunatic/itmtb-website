@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <title>Privacy policy . itmtb</title>
+    <title>Privacy policy</title>
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="icon" href="assets/favicon.svg" type="image/svg" sizes="16x16">
@@ -82,22 +82,27 @@
         <br> -->
     </div>
 
-    <div class="topnav">
-        <a href="#home" class="active">Logo</a>
-        <div id="myLinks">
-            <a href="index.html">Home</a>
-            <a href="index.html#about-us-link">About Us</a>
-            <a href="index.html#our-products-link">Our Products</a>
-            <a href="index.html#contact-us-link">Contact Us</a>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <img src="assets/ham-menu.svg" alt="">
+    <nav class="navbar">
+        <div class="brand-title"><br></div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </a>
-    </div>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about-us-link">About Us</a></li>
+                <li><a href="index.html#our-products-link">Our Products</a></li>
+                <li><a href="index.html#contact-us-link">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <div class="container">
         <div class="row" style="margin-top: 60px;">
-            <img src="assets/logo.svg" alt="">
+            <a href="index.html"><img src="assets/logo.svg" alt=""></a>
+
         </div>
 
         <br>
@@ -364,7 +369,7 @@
                         <div class="col-sm-1 ">
 
                         </div>
-                        <div class="col-sm-5 ">
+                        <div class="col-sm-5 col-xs-5">
                             <a href="index.html">Home</a>
 
                             <br><br><br>
@@ -380,7 +385,7 @@
                         <div class="col-sm-1 ">
 
                         </div>
-                        <div class="col-sm-5 " id="footer-priv-policy">
+                        <div class="col-sm-5 col-xs-5" id="footer-priv-policy">
 
                             <a href="privacy_policy.html">Privacy Policy</a>
 
@@ -400,16 +405,21 @@
                 </div>
             </div>
         </div>
+        <hr>
+        <br>
+        <br>
+        <center style="font-size: 12px; opacity: 0.7;">© 2020. itmtb technologies. All Rights Reserved.
+        </center>
+        <br>
+        <br>
     </footer>
     <script>
-        function myFunction() {
-            var x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+        const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+        toggleButton.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active')
+        })
     </script>
 
 

@@ -559,42 +559,6 @@ footer {
     margin-top: 10%;
 }
 
-.topnav {
-    overflow: hidden;
-    background-color: #333;
-    position: relative;
-    display: none;
-}
-
-.topnav #myLinks {
-    display: none;
-}
-
-.topnav a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-}
-
-.topnav a.icon {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.active {
-    background-color: white;
-    color: white;
-}
-
 .pacifico {
     font-family: Pacifico;
     font-style: normal;
@@ -602,6 +566,92 @@ footer {
     font-size: 64px;
     letter-spacing: 0.02em;
     color: #F68928;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    z-index: 999;
+    display: none;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links ul li {
+        text-align: center;
+    }
+    .navbar-links ul li a {
+        padding: 1.5rem 1rem;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
 }
 
 @media only screen and (max-width: 1199px) {
@@ -617,12 +667,8 @@ footer {
     .only-for-mob {
         display: none;
     }
-    .topnav {
+    .navbar {
         display: block;
-        margin-top: 4%;
-        right: 4%;
-        position: fixed;
-        z-index: 999;
     }
 }
 
@@ -696,6 +742,12 @@ footer {
     }
     .store-img {
         width: 40px;
+    }
+    footer {
+        text-align: center;
+    }
+    .footer-quote {
+        font-size: 40px;
     }
 }
 
